@@ -39,18 +39,7 @@ class ProposalsTest extends TestCase
              ->see($proposal->problem);
     }
 
-    public function testCreateProposal()
-    {
-        $user = User::all()->random();
-        $this->actingAs($user)->visit('/proposals/create')
-            ->seePageIs('/proposals/create')
-            ->type('idea name', 'name')
-            ->type('central idea', 'idea_central')
-            ->type('problem', 'problem')
-            ->type('idea exposition', 'idea_exposition')
-            ->press('Incluir')
-            ->see('Sucesso');
-    }
+
 
     /* public function testCreateProposalUserNotloggedIn()     NÃO TERMINADO
     {
