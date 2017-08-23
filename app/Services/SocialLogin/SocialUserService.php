@@ -58,8 +58,6 @@ class SocialUserService
     {
         if (!$user = $this->usersRepository->findByEmail($email)) {
             $user = $this->socialUserRepository->createUser($email, $socialUser);
-
-            return $user;
         }
 
         return $user;
