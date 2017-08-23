@@ -37,7 +37,8 @@ class Handler extends ExceptionHandler
         parent::report($e);
     }
 
-    /**
+
+     /**
      * Render an exception into an HTTP response.
      *
      * @param \Illuminate\Http\Request $request
@@ -52,7 +53,7 @@ class Handler extends ExceptionHandler
 //          return response()->view('errors.custom', [], 500);
         }
 
-        if($this->isHttpException($e))
+ /*       if($this->isHttpException($e))
         {
             switch ($e->getStatusCode())
             {
@@ -70,12 +71,9 @@ class Handler extends ExceptionHandler
                     return $this->renderHttpException($e);
                     break;
             }
-        }
+        }*/
 
         return parent::render($request, $e);
     }
-
-
-
 
 }
