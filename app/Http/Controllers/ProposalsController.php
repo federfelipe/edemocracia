@@ -186,6 +186,23 @@ class ProposalsController extends Controller
         return redirect()->back();
     }
 
+    // NÃO ESTÁ SENDO USADO   deletado no último commit e recuperado
+    public function response($id)
+     {
+         //Get Proposal
+         $proposal = $this->proposalsRepository->find($id);
+
+         if (Gate::allows('edit', $proposal)) {
+             return view('proposals.response')
+                 ->with('proposal', $proposal);
+         } else {
+                return redirect()->route('proposals')
+                        ->with('error_msg', 'Você não é o dono desta Ideia Legislativa');
+         }
+    }
+
+
+
     public function show($id)
     {
         $proposal = $this->proposalsRepository->find($id);
@@ -258,5 +275,42 @@ class ProposalsController extends Controller
         return redirect()->route('proposal.show', ['proposal' => $proposal])
             ->with('proposal_crud_msg', 'Ideia Legislativa Editada com Sucesso');
     }
+
+
+    // NÃO ESTÁ SENDO USADO   deletado no último commit e recuperado
+    public function updateResponse($id, ResponseFormRequest $formRequest)
+     {
+         $proposal = $this->proposalsRepository->find($id);
+
+         $input = $formRequest->except('_token', '_method');
+
+         $input['responder_id'] = Auth::user()->id;
+
+         //Create ProposalHistory Object
+         $proposal_history = new ProposalHistory();
+         //Get attributes from Proposals Eloquent
+         $proposal_history->setRawAttributes(array_except($proposal->getAttributes(), [
+             'id', 'created_at', 'updated_at',
+         ]));
+
+         //Append Update Info + Response
+         $proposal_history->proposal_id = $id;
+         $proposal_history->update_id = Auth::user()->id;
+         $proposal_history->update_date = Carbon::now();
+         $proposal_history->response = $input['response'];
+         $proposal_history->responder_id = $input['responder_id'];
+
+         //Save History
+         $proposal_history->save();
+
+         //Then update Proposal
+         $proposal->forcefill($input)->save();
+
+         return redirect()->route('proposals')
+             ->with('proposal_crud_msg', 'Ideia Legislativa Respondida com Sucesso');
+     }
+
+
+
 
 }

@@ -76,10 +76,10 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 
     Route::patch('proposals/{id}/update', ['as' => 'proposal.update', 'uses' => 'ProposalsController@update']);
 
-    Route::get('proposals/{id}/destroy', ['as' => 'proposal.destroy', 'uses' => 'ProposalsController@destroy']);
-
+    // checar uso
     Route::get('proposals/{id}/response', ['as' => 'proposal.response', 'uses' => 'ProposalsController@response']);
 
+    // checar uso
     Route::patch('proposals/{id}/updateResponse', ['as' => 'proposal.updateResponse', 'uses' => 'ProposalsController@updateResponse']);
 
     Route::get('proposals/notresponded', ['as' => 'proposals.notresponded', 'uses' => 'ProposalsController@notResponded']);
