@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/vagrant/Code/edemocracia/app/Repositories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/home/vagrant/Code/edemocracia/app</a></li>
+        <li><a href="index.html">Repositories</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="SocialUserRepository.php.html#15">SocialUserRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#14">ProposalsRepository</a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="UsersRepository.php.html#16">UsersRepository</a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ProposalsRepository.php.html#14">ProposalsRepository</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="SocialUserRepository.php.html#15">SocialUserRepository</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="UsersRepository.php.html#16">UsersRepository</a></td><td class="text-right">7</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ProposalsRepository.php.html#163"><abbr title="ProposalsRepository::timeLimit">timeLimit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#181"><abbr title="ProposalsRepository::storeBillProject">storeBillProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#207"><abbr title="ProposalsRepository::forUser">forUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#221"><abbr title="ProposalsRepository::getResponsesForUser">getResponsesForUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#244"><abbr title="ProposalsRepository::sendProposalApprovalGoalNotification">sendProposalApprovalGoalNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#286"><abbr title="ProposalsRepository::sendProposalTimeLimit">sendProposalTimeLimit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#300"><abbr title="ProposalsRepository::sendProposalClosed">sendProposalClosed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialUserRepository.php.html#19"><abbr title="SocialUserRepository::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialUserRepository.php.html#26"><abbr title="SocialUserRepository::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialUserRepository.php.html#31"><abbr title="SocialUserRepository::createUser">createUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersRepository.php.html#38"><abbr title="UsersRepository::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UsersRepository.php.html#43"><abbr title="UsersRepository::findByEmail">findByEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#84"><abbr title="ProposalsRepository::publish">publish</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#34"><abbr title="ProposalsRepository::approve">approve</abbr></a></td><td class="text-right">76%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ProposalsRepository.php.html#163"><abbr title="ProposalsRepository::timeLimit">timeLimit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SocialUserRepository.php.html#31"><abbr title="SocialUserRepository::createUser">createUser</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#84"><abbr title="ProposalsRepository::publish">publish</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="ProposalsRepository.php.html#34"><abbr title="ProposalsRepository::approve">approve</abbr></a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.5-2+deb.sury.org~trusty+1</a> and <a href="https://phpunit.de/">PHPUnit 4.8.36</a> at Fri Aug 18 17:49:37 UTC 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,0,0,0,0,0,0,1,1,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,0,0,0,0,0,1,0,1,0,0,23], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,2,"<a href=\"DataRepository.php.html#14\">DataRepository<\/a>"],[73.529411764706,48,"<a href=\"ProposalsRepository.php.html#14\">ProposalsRepository<\/a>"],[0,5,"<a href=\"SocialUserRepository.php.html#15\">SocialUserRepository<\/a>"],[85,7,"<a href=\"UsersRepository.php.html#16\">UsersRepository<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"DataRepository.php.html#16\">DataRepository::getStates<\/a>"],[100,1,"<a href=\"DataRepository.php.html#21\">DataRepository::getRoles<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#24\">ProposalsRepository::all<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#29\">ProposalsRepository::find<\/a>"],[76.923076923077,4,"<a href=\"ProposalsRepository.php.html#34\">ProposalsRepository::approve<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#62\">ProposalsRepository::toCommittee<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#73\">ProposalsRepository::setApprovalGoal<\/a>"],[50,5,"<a href=\"ProposalsRepository.php.html#84\">ProposalsRepository::publish<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#99\">ProposalsRepository::notResponded<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#108\">ProposalsRepository::approved<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#115\">ProposalsRepository::disapproved<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#122\">ProposalsRepository::expired<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#129\">ProposalsRepository::approvalGoal<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#137\">ProposalsRepository::inCommittee<\/a>"],[100,2,"<a href=\"ProposalsRepository.php.html#368\">ProposalsRepository::anonymous function<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#149\">ProposalsRepository::approvedByCommittee<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#156\">ProposalsRepository::disapprovedByCommittee<\/a>"],[0,3,"<a href=\"ProposalsRepository.php.html#163\">ProposalsRepository::timeLimit<\/a>"],[0,1,"<a href=\"ProposalsRepository.php.html#181\">ProposalsRepository::storeBillProject<\/a>"],[0,1,"<a href=\"ProposalsRepository.php.html#207\">ProposalsRepository::forUser<\/a>"],[0,1,"<a href=\"ProposalsRepository.php.html#221\">ProposalsRepository::getResponsesForUser<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#228\">ProposalsRepository::sendProposalToCreator<\/a>"],[0,1,"<a href=\"ProposalsRepository.php.html#244\">ProposalsRepository::sendProposalApprovalGoalNotification<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#258\">ProposalsRepository::sendProposalApprovedByCommittee<\/a>"],[100,1,"<a href=\"ProposalsRepository.php.html#272\">ProposalsRepository::sendProposalClosedByCommittee<\/a>"],[0,1,"<a href=\"ProposalsRepository.php.html#286\">ProposalsRepository::sendProposalTimeLimit<\/a>"],[0,1,"<a href=\"ProposalsRepository.php.html#300\">ProposalsRepository::sendProposalClosed<\/a>"],[100,11,"<a href=\"ProposalsRepository.php.html#317\">ProposalsRepository::filterProposals<\/a>"],[100,2,"<a href=\"ProposalsRepository.php.html#366\">ProposalsRepository::buildSearch<\/a>"],[0,1,"<a href=\"SocialUserRepository.php.html#19\">SocialUserRepository::find<\/a>"],[0,1,"<a href=\"SocialUserRepository.php.html#26\">SocialUserRepository::destroy<\/a>"],[0,3,"<a href=\"SocialUserRepository.php.html#31\">SocialUserRepository::createUser<\/a>"],[100,3,"<a href=\"UsersRepository.php.html#18\">UsersRepository::all<\/a>"],[100,1,"<a href=\"UsersRepository.php.html#33\">UsersRepository::find<\/a>"],[0,1,"<a href=\"UsersRepository.php.html#38\">UsersRepository::destroy<\/a>"],[0,1,"<a href=\"UsersRepository.php.html#43\">UsersRepository::findByEmail<\/a>"],[100,1,"<a href=\"UsersRepository.php.html#50\">UsersRepository::storeUser<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

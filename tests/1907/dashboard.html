@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/vagrant/Code/edemocracia/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/home/vagrant/Code/edemocracia/app</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="BillsProject.php.html#13">BillsProject</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/SocialAuthController.php.html#8">SocialAuthController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Support/StateSeederSupport.php.html#8">StateSeederSupport</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialUser.php.html#8">SocialUser</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialNetwork.php.html#8">SocialNetwork</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#15">SocialUserService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/SocialUserRepository.php.html#15">SocialUserRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalTimeLimit.php.html#8">EmailProposalTimeLimit</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalReachedApprovalGoal.php.html#8">EmailProposalReachedApprovalGoal</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalClosed.php.html#8">EmailProposalClosed</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalApproved.php.html#8">EmailProposalApproved</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/BillProjectFormRequest.php.html#5">BillProjectFormRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/Inspire.php.html#8">Inspire</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/VueItemController.php.html#16">VueItemController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UsersController.php.html#15">UsersController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WelcomeController.php.html#11">WelcomeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#7">QueryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#12">Handler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/MinimumSeedToTestUserRegister.php.html#8">MinimumSeedToTestUserRegister</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalApproved.php.html#8">ProposalApproved</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalClosed.php.html#8">ProposalClosed</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalReachedApprovalGoal.php.html#8">ProposalReachedApprovalGoal</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalTimeLimit.php.html#8">ProposalTimeLimit</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#12">LikesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/HomeController.php.html#5">HomeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordController.php.html#8">PasswordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Proposal.php.html#8">Proposal</a></td><td class="text-right">31%</td></tr>
+       <tr><td><a href="Policies/ProposalPolicy.php.html#9">ProposalPolicy</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#21">ProposalsController</a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="Policies/UserPolicy.php.html#8">UserPolicy</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#8">RedirectIfAuthenticated</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#8">AdminMiddleware</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#15">AuthController</a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#14">ProposalsRepository</a></td><td class="text-right">74%</td></tr>
+       <tr><td><a href="Events/ProposalClosedByCommittee.php.html#8">ProposalClosedByCommittee</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Events/ProposalWasCreated.php.html#8">ProposalWasCreated</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Events/ProposalApprovedByCommittee.php.html#8">ProposalApprovedByCommittee</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="User.php.html#9">User</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Http/Middleware/UUIDMiddleware.php.html#8">UUIDMiddleware</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#8">Authenticate</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Repositories/UsersRepository.php.html#16">UsersRepository</a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#12">LikesController</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#15">SocialUserService</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#14">ProposalsRepository</a></td><td class="text-right">74</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#21">ProposalsController</a></td><td class="text-right">74</td></tr>
+       <tr><td><a href="Proposal.php.html#8">Proposal</a></td><td class="text-right">58</td></tr>
+       <tr><td><a href="Http/Controllers/SocialAuthController.php.html#8">SocialAuthController</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Repositories/SocialUserRepository.php.html#15">SocialUserRepository</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="User.php.html#9">User</a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#15">AuthController</a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#12">Handler</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/UsersRepository.php.html#16">UsersRepository</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#8">AdminMiddleware</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#8">Authenticate</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#8">RedirectIfAuthenticated</a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Middleware/UUIDMiddleware.php.html#8">UUIDMiddleware</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="BillsProject.php.html#21"><abbr title="BillsProject::proposal">proposal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalReachedApprovalGoal.php.html#32"><abbr title="EmailProposalReachedApprovalGoal::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Proposal.php.html#82"><abbr title="Proposal::getTotalLikeCountAttribute">getTotalLikeCountAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Proposal.php.html#56"><abbr title="Proposal::getRatingAttribute">getRatingAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Proposal.php.html#50"><abbr title="Proposal::bill_project">bill_project</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Proposal.php.html#44"><abbr title="Proposal::likes">likes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/UserPolicy.php.html#27"><abbr title="UserPolicy::bypass">bypass</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProposalPolicy.php.html#68"><abbr title="ProposalPolicy::isProposalOwner">isProposalOwner</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProposalPolicy.php.html#57"><abbr title="ProposalPolicy::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProposalPolicy.php.html#44"><abbr title="ProposalPolicy::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Policies/ProposalPolicy.php.html#31"><abbr title="ProposalPolicy::bypass">bypass</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalTimeLimit.php.html#32"><abbr title="EmailProposalTimeLimit::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalTimeLimit.php.html#20"><abbr title="EmailProposalTimeLimit::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalReachedApprovalGoal.php.html#20"><abbr title="EmailProposalReachedApprovalGoal::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#161"><abbr title="ProposalsRepository::timeLimit">timeLimit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalClosed.php.html#32"><abbr title="EmailProposalClosed::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalClosed.php.html#20"><abbr title="EmailProposalClosed::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalApproved.php.html#32"><abbr title="EmailProposalApproved::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Listeners/EmailProposalApproved.php.html#20"><abbr title="EmailProposalApproved::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/BillProjectFormRequest.php.html#22"><abbr title="BillProjectFormRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/BillProjectFormRequest.php.html#12"><abbr title="BillProjectFormRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/WelcomeController.php.html#13"><abbr title="WelcomeController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/VueItemController.php.html#111"><abbr title="VueItemController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/VueItemController.php.html#92"><abbr title="VueItemController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/VueItemController.php.html#67"><abbr title="VueItemController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/VueItemController.php.html#41"><abbr title="VueItemController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Proposal.php.html#87"><abbr title="Proposal::getApprovalsCountAttribute">getApprovalsCountAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#179"><abbr title="ProposalsRepository::storeBillProject">storeBillProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/VueItemController.php.html#20"><abbr title="VueItemController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#52"><abbr title="SocialUserService::getEmail">getEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#131"><abbr title="User::socialNetworks">socialNetworks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#125"><abbr title="User::getUserByEmail">getUserByEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#80"><abbr title="User::getIsCommitteeUserAttribute">getIsCommitteeUserAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Support/StateSeederSupport.php.html#10"><abbr title="StateSeederSupport::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialUser.php.html#22"><abbr title="SocialUser::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialUser.php.html#16"><abbr title="SocialUser::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialNetwork.php.html#26"><abbr title="SocialNetwork::users">users</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SocialNetwork.php.html#20"><abbr title="SocialNetwork::getSocialNetwork">getSocialNetwork</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#75"><abbr title="SocialUserService::findOrCreateUserSocialNetwork">findOrCreateUserSocialNetwork</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#68"><abbr title="SocialUserService::getSocialNetwork">getSocialNetwork</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#57"><abbr title="SocialUserService::findOrCreateUser">findOrCreateUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#47"><abbr title="SocialUserService::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#205"><abbr title="ProposalsRepository::forUser">forUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#27"><abbr title="SocialUserService::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#21"><abbr title="SocialUserService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/UsersRepository.php.html#43"><abbr title="UsersRepository::findByEmail">findByEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/UsersRepository.php.html#38"><abbr title="UsersRepository::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/SocialUserRepository.php.html#31"><abbr title="SocialUserRepository::createUser">createUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/SocialUserRepository.php.html#26"><abbr title="SocialUserRepository::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/SocialUserRepository.php.html#19"><abbr title="SocialUserRepository::find">find</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#298"><abbr title="ProposalsRepository::sendProposalClosed">sendProposalClosed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#284"><abbr title="ProposalsRepository::sendProposalTimeLimit">sendProposalTimeLimit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#242"><abbr title="ProposalsRepository::sendProposalApprovalGoalNotification">sendProposalApprovalGoalNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#219"><abbr title="ProposalsRepository::getResponsesForUser">getResponsesForUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/Inspire.php.html#29"><abbr title="Inspire::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/VueItemController.php.html#26"><abbr title="VueItemController::manageVue">manageVue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UsersController.php.html#45"><abbr title="UsersController::responses">responses</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalTimeLimit.php.html#21"><abbr title="ProposalTimeLimit::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#96"><abbr title="LikesController::update_proposal_like">update_proposal_like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#67"><abbr title="LikesController::user_has_already_voted">user_has_already_voted</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#19"><abbr title="LikesController::like">like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/HomeController.php.html#12"><abbr title="HomeController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/PasswordController.php.html#28"><abbr title="PasswordController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#92"><abbr title="AuthController::showRegistrationForm">showRegistrationForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#48"><abbr title="Handler::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#35"><abbr title="Handler::report">report</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalWasCreated.php.html#32"><abbr title="ProposalWasCreated::broadcastOn">broadcastOn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalTimeLimit.php.html#40"><abbr title="ProposalTimeLimit::getProposal">getProposal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalTimeLimit.php.html#32"><abbr title="ProposalTimeLimit::broadcastOn">broadcastOn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalReachedApprovalGoal.php.html#40"><abbr title="ProposalReachedApprovalGoal::getProposal">getProposal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#124"><abbr title="LikesController::showCookie">showCookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalReachedApprovalGoal.php.html#32"><abbr title="ProposalReachedApprovalGoal::broadcastOn">broadcastOn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalReachedApprovalGoal.php.html#21"><abbr title="ProposalReachedApprovalGoal::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalClosedByCommittee.php.html#32"><abbr title="ProposalClosedByCommittee::broadcastOn">broadcastOn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalClosed.php.html#40"><abbr title="ProposalClosed::getProposal">getProposal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalClosed.php.html#32"><abbr title="ProposalClosed::broadcastOn">broadcastOn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalClosed.php.html#21"><abbr title="ProposalClosed::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalApprovedByCommittee.php.html#32"><abbr title="ProposalApprovedByCommittee::broadcastOn">broadcastOn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalApproved.php.html#40"><abbr title="ProposalApproved::getProposal">getProposal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalApproved.php.html#32"><abbr title="ProposalApproved::broadcastOn">broadcastOn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Events/ProposalApproved.php.html#21"><abbr title="ProposalApproved::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/MinimumSeedToTestUserRegister.php.html#39"><abbr title="MinimumSeedToTestUserRegister::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/MinimumSeedToTestUserRegister.php.html#29"><abbr title="MinimumSeedToTestUserRegister::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UsersController.php.html#31"><abbr title="UsersController::proposals">proposals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#113"><abbr title="LikesController::unlike">unlike</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#129"><abbr title="LikesController::setCookie">setCookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#24"><abbr title="QueryController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/UsersController.php.html#19"><abbr title="UsersController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/SocialAuthController.php.html#31"><abbr title="SocialAuthController::getDriver">getDriver</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/SocialAuthController.php.html#22"><abbr title="SocialAuthController::socialNetworkCallback">socialNetworkCallback</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/SocialAuthController.php.html#17"><abbr title="SocialAuthController::redirect">redirect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/SocialAuthController.php.html#12"><abbr title="SocialAuthController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#90"><abbr title="QueryController::search">search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#85"><abbr title="QueryController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#73"><abbr title="QueryController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#60"><abbr title="QueryController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#48"><abbr title="QueryController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#40"><abbr title="ProposalsController::committee">committee</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#36"><abbr title="QueryController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/QueryController.php.html#14"><abbr title="QueryController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#331"><abbr title="ProposalsController::updateResponse">updateResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#60"><abbr title="ProposalsController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#100"><abbr title="ProposalsController::finished">finished</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#216"><abbr title="ProposalsController::open">open</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#136"><abbr title="User::socialUser">socialUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#237"><abbr title="ProposalsController::response">response</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#223"><abbr title="ProposalsController::progress">progress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#82"><abbr title="ProposalsController::edit">edit</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#133"><abbr title="AuthController::register">register</abbr></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#104"><abbr title="AuthController::showLoginForm">showLoginForm</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#31"><abbr title="AdminMiddleware::handle">handle</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Controllers/AdminController.php.html#356"><abbr title="AdminController::approvedProposal">approvedProposal</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#34"><abbr title="ProposalsRepository::approve">approve</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Http/Middleware/UUIDMiddleware.php.html#18"><abbr title="UUIDMiddleware::handle">handle</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#19"><abbr title="Authenticate::handle">handle</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#151"><abbr title="ProposalsController::likeUnlike">likeUnlike</abbr></a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Proposal.php.html#56"><abbr title="Proposal::getRatingAttribute">getRatingAttribute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#19"><abbr title="LikesController::like">like</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/LikesController.php.html#67"><abbr title="LikesController::user_has_already_voted">user_has_already_voted</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/SocialUserRepository.php.html#31"><abbr title="SocialUserRepository::createUser">createUser</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#161"><abbr title="ProposalsRepository::timeLimit">timeLimit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#151"><abbr title="ProposalsController::likeUnlike">likeUnlike</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#48"><abbr title="Handler::render">render</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#75"><abbr title="SocialUserService::findOrCreateUserSocialNetwork">findOrCreateUserSocialNetwork</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#57"><abbr title="SocialUserService::findOrCreateUser">findOrCreateUser</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/SocialLogin/SocialUserService.php.html#52"><abbr title="SocialUserService::getEmail">getEmail</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#80"><abbr title="User::getIsCommitteeUserAttribute">getIsCommitteeUserAttribute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/SocialAuthController.php.html#22"><abbr title="SocialAuthController::socialNetworkCallback">socialNetworkCallback</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#237"><abbr title="ProposalsController::response">response</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#60"><abbr title="ProposalsController::destroy">destroy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#92"><abbr title="AuthController::showRegistrationForm">showRegistrationForm</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/ProposalsRepository.php.html#34"><abbr title="ProposalsRepository::approve">approve</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#133"><abbr title="AuthController::register">register</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthController.php.html#104"><abbr title="AuthController::showLoginForm">showLoginForm</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/AdminMiddleware.php.html#31"><abbr title="AdminMiddleware::handle">handle</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#19"><abbr title="Authenticate::handle">handle</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/ProposalsController.php.html#82"><abbr title="ProposalsController::edit">edit</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/AdminController.php.html#356"><abbr title="AdminController::approvedProposal">approvedProposal</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Middleware/UUIDMiddleware.php.html#18"><abbr title="UUIDMiddleware::handle">handle</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.5-2+deb.sury.org~trusty+1</a> and <a href="https://phpunit.de/">PHPUnit 4.8.27</a> at Wed Jul 19 17:55:55 UTC 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.min.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([26,0,0,0,2,0,0,4,6,3,2,25], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([107,0,0,0,0,0,0,6,1,3,1,131], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Approval.php.html#13\">Approval<\/a>"],[0,1,"<a href=\"BillsProject.php.html#13\">BillsProject<\/a>"],[0,1,"<a href=\"Console\/Commands\/Inspire.php.html#8\">Inspire<\/a>"],[0,2,"<a href=\"Console\/Commands\/MinimumSeedToTestUserRegister.php.html#8\">MinimumSeedToTestUserRegister<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#7\">Kernel<\/a>"],[100,0,"<a href=\"Events\/Event.php.html#5\">Event<\/a>"],[0,3,"<a href=\"Events\/ProposalApproved.php.html#8\">ProposalApproved<\/a>"],[75,3,"<a href=\"Events\/ProposalApprovedByCommittee.php.html#8\">ProposalApprovedByCommittee<\/a>"],[0,3,"<a href=\"Events\/ProposalClosed.php.html#8\">ProposalClosed<\/a>"],[75,3,"<a href=\"Events\/ProposalClosedByCommittee.php.html#8\">ProposalClosedByCommittee<\/a>"],[0,3,"<a href=\"Events\/ProposalReachedApprovalGoal.php.html#8\">ProposalReachedApprovalGoal<\/a>"],[0,3,"<a href=\"Events\/ProposalTimeLimit.php.html#8\">ProposalTimeLimit<\/a>"],[75,3,"<a href=\"Events\/ProposalWasCreated.php.html#8\">ProposalWasCreated<\/a>"],[0,3,"<a href=\"Exceptions\/Handler.php.html#12\">Handler<\/a>"],[100,6,"<a href=\"Http\/Controllers\/AboutController.php.html#13\">AboutController<\/a>"],[99.019607843137,53,"<a href=\"Http\/Controllers\/AdminController.php.html#28\">AdminController<\/a>"],[71.794871794872,12,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#15\">AuthController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/PasswordController.php.html#8\">PasswordController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#12\">Controller<\/a>"],[0,1,"<a href=\"Http\/Controllers\/HomeController.php.html#5\">HomeController<\/a>"],[0,10,"<a href=\"Http\/Controllers\/LikesController.php.html#12\">LikesController<\/a>"],[63.28125,30,"<a href=\"Http\/Controllers\/ProposalsController.php.html#21\">ProposalsController<\/a>"],[0,8,"<a href=\"Http\/Controllers\/QueryController.php.html#7\">QueryController<\/a>"],[0,5,"<a href=\"Http\/Controllers\/SocialAuthController.php.html#8\">SocialAuthController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/UsersController.php.html#15\">UsersController<\/a>"],[0,6,"<a href=\"Http\/Controllers\/VueItemController.php.html#16\">VueItemController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/WelcomeController.php.html#11\">WelcomeController<\/a>"],[66.666666666667,3,"<a href=\"Http\/Middleware\/AdminMiddleware.php.html#8\">AdminMiddleware<\/a>"],[80,3,"<a href=\"Http\/Middleware\/Authenticate.php.html#8\">Authenticate<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">EncryptCookies<\/a>"],[66.666666666667,2,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#8\">RedirectIfAuthenticated<\/a>"],[80,2,"<a href=\"Http\/Middleware\/UUIDMiddleware.php.html#8\">UUIDMiddleware<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">VerifyCsrfToken<\/a>"],[0,2,"<a href=\"Http\/Requests\/BillProjectFormRequest.php.html#5\">BillProjectFormRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/ContactFormRequest.php.html#11\">ContactFormRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/ProposalFormRequest.php.html#5\">ProposalFormRequest<\/a>"],[100,0,"<a href=\"Http\/Requests\/Request.php.html#7\">Request<\/a>"],[100,3,"<a href=\"Http\/Requests\/ResponseFormRequest.php.html#7\">ResponseFormRequest<\/a>"],[92.307692307692,2,"<a href=\"Http\/ViewComposers\/StatusComposer.php.html#17\">StatusComposer<\/a>"],[100,0,"<a href=\"Jobs\/Job.php.html#7\">Job<\/a>"],[100,1,"<a href=\"Like.php.html#13\">Like<\/a>"],[0,2,"<a href=\"Listeners\/EmailProposalApproved.php.html#8\">EmailProposalApproved<\/a>"],[100,2,"<a href=\"Listeners\/EmailProposalApprovedByCommittee.php.html#8\">EmailProposalApprovedByCommittee<\/a>"],[0,2,"<a href=\"Listeners\/EmailProposalClosed.php.html#8\">EmailProposalClosed<\/a>"],[100,2,"<a href=\"Listeners\/EmailProposalClosedByCommittee.php.html#8\">EmailProposalClosedByCommittee<\/a>"],[100,2,"<a href=\"Listeners\/EmailProposalCreator.php.html#8\">EmailProposalCreator<\/a>"],[0,2,"<a href=\"Listeners\/EmailProposalReachedApprovalGoal.php.html#8\">EmailProposalReachedApprovalGoal<\/a>"],[0,2,"<a href=\"Listeners\/EmailProposalTimeLimit.php.html#8\">EmailProposalTimeLimit<\/a>"],[33.333333333333,6,"<a href=\"Policies\/ProposalPolicy.php.html#9\">ProposalPolicy<\/a>"],[66.666666666667,3,"<a href=\"Policies\/UserPolicy.php.html#8\">UserPolicy<\/a>"],[31.25,12,"<a href=\"Proposal.php.html#8\">Proposal<\/a>"],[100,1,"<a href=\"ProposalFollow.php.html#13\">ProposalFollow<\/a>"],[100,0,"<a href=\"ProposalHistory.php.html#13\">ProposalHistory<\/a>"],[100,3,"<a href=\"Providers\/AppServiceProvider.php.html#9\">AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#12\">AuthServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#8\">EventServiceProvider<\/a>"],[100,3,"<a href=\"Providers\/RouteServiceProvider.php.html#8\">RouteServiceProvider<\/a>"],[100,2,"<a href=\"Repositories\/DataRepository.php.html#14\">DataRepository<\/a>"],[74.809160305344,44,"<a href=\"Repositories\/ProposalsRepository.php.html#14\">ProposalsRepository<\/a>"],[0,5,"<a href=\"Repositories\/SocialUserRepository.php.html#15\">SocialUserRepository<\/a>"],[85,7,"<a href=\"Repositories\/UsersRepository.php.html#16\">UsersRepository<\/a>"],[100,1,"<a href=\"Role.php.html#13\">Role<\/a>"],[0,10,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#15\">SocialUserService<\/a>"],[0,2,"<a href=\"SocialNetwork.php.html#8\">SocialNetwork<\/a>"],[0,2,"<a href=\"SocialUser.php.html#8\">SocialUser<\/a>"],[100,2,"<a href=\"State.php.html#13\">State<\/a>"],[0,1,"<a href=\"Support\/StateSeederSupport.php.html#8\">StateSeederSupport<\/a>"],[75,19,"<a href=\"User.php.html#9\">User<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Approval.php.html#28\">Approval::proposal<\/a>"],[0,1,"<a href=\"BillsProject.php.html#21\">BillsProject::proposal<\/a>"],[0,1,"<a href=\"Console\/Commands\/Inspire.php.html#29\">Inspire::handle<\/a>"],[0,1,"<a href=\"Console\/Commands\/MinimumSeedToTestUserRegister.php.html#29\">MinimumSeedToTestUserRegister::__construct<\/a>"],[0,1,"<a href=\"Console\/Commands\/MinimumSeedToTestUserRegister.php.html#39\">MinimumSeedToTestUserRegister::handle<\/a>"],[0,1,"<a href=\"Events\/ProposalApproved.php.html#21\">ProposalApproved::__construct<\/a>"],[0,1,"<a href=\"Events\/ProposalApproved.php.html#32\">ProposalApproved::broadcastOn<\/a>"],[0,1,"<a href=\"Events\/ProposalApproved.php.html#40\">ProposalApproved::getProposal<\/a>"],[100,1,"<a href=\"Events\/ProposalApprovedByCommittee.php.html#21\">ProposalApprovedByCommittee::__construct<\/a>"],[0,1,"<a href=\"Events\/ProposalApprovedByCommittee.php.html#32\">ProposalApprovedByCommittee::broadcastOn<\/a>"],[100,1,"<a href=\"Events\/ProposalApprovedByCommittee.php.html#40\">ProposalApprovedByCommittee::getProposal<\/a>"],[0,1,"<a href=\"Events\/ProposalClosed.php.html#21\">ProposalClosed::__construct<\/a>"],[0,1,"<a href=\"Events\/ProposalClosed.php.html#32\">ProposalClosed::broadcastOn<\/a>"],[0,1,"<a href=\"Events\/ProposalClosed.php.html#40\">ProposalClosed::getProposal<\/a>"],[100,1,"<a href=\"Events\/ProposalClosedByCommittee.php.html#21\">ProposalClosedByCommittee::__construct<\/a>"],[0,1,"<a href=\"Events\/ProposalClosedByCommittee.php.html#32\">ProposalClosedByCommittee::broadcastOn<\/a>"],[100,1,"<a href=\"Events\/ProposalClosedByCommittee.php.html#40\">ProposalClosedByCommittee::getProposal<\/a>"],[0,1,"<a href=\"Events\/ProposalReachedApprovalGoal.php.html#21\">ProposalReachedApprovalGoal::__construct<\/a>"],[0,1,"<a href=\"Events\/ProposalReachedApprovalGoal.php.html#32\">ProposalReachedApprovalGoal::broadcastOn<\/a>"],[0,1,"<a href=\"Events\/ProposalReachedApprovalGoal.php.html#40\">ProposalReachedApprovalGoal::getProposal<\/a>"],[0,1,"<a href=\"Events\/ProposalTimeLimit.php.html#21\">ProposalTimeLimit::__construct<\/a>"],[0,1,"<a href=\"Events\/ProposalTimeLimit.php.html#32\">ProposalTimeLimit::broadcastOn<\/a>"],[0,1,"<a href=\"Events\/ProposalTimeLimit.php.html#40\">ProposalTimeLimit::getProposal<\/a>"],[100,1,"<a href=\"Events\/ProposalWasCreated.php.html#21\">ProposalWasCreated::__construct<\/a>"],[0,1,"<a href=\"Events\/ProposalWasCreated.php.html#32\">ProposalWasCreated::broadcastOn<\/a>"],[100,1,"<a href=\"Events\/ProposalWasCreated.php.html#40\">ProposalWasCreated::getProposal<\/a>"],[0,1,"<a href=\"Exceptions\/Handler.php.html#35\">Handler::report<\/a>"],[0,2,"<a href=\"Exceptions\/Handler.php.html#48\">Handler::render<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AboutController.php.html#15\">AboutController::index<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AboutController.php.html#21\">AboutController::committee<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AboutController.php.html#26\">AboutController::terms<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AboutController.php.html#31\">AboutController::create<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AboutController.php.html#45\">AboutController::store<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AboutController.php.html#54\">AboutController::anonymous function<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#37\">AdminController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#44\">AdminController::index<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#49\">AdminController::users<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#57\">AdminController::showUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#71\">AdminController::createUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#87\">AdminController::storeUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#101\">AdminController::editUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#116\">AdminController::updateUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#137\">AdminController::destroyUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#149\">AdminController::proposals<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#163\">AdminController::showProposal<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#179\">AdminController::createProposal<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#191\">AdminController::storeProposal<\/a>"],[100,2,"<a href=\"Http\/Controllers\/AdminController.php.html#215\">AdminController::editProposal<\/a>"],[100,2,"<a href=\"Http\/Controllers\/AdminController.php.html#240\">AdminController::billProject<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#265\">AdminController::updateProposal<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#302\">AdminController::updateBillProject<\/a>"],[100,2,"<a href=\"Http\/Controllers\/AdminController.php.html#335\">AdminController::destroyProposal<\/a>"],[66.666666666667,2,"<a href=\"Http\/Controllers\/AdminController.php.html#356\">AdminController::approvedProposal<\/a>"],[100,5,"<a href=\"Http\/Controllers\/AdminController.php.html#374\">AdminController::disapprovedProposal<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#412\">AdminController::response<\/a>"],[100,2,"<a href=\"Http\/Controllers\/AdminController.php.html#428\">AdminController::updateResponse<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#473\">AdminController::toCommittee<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#480\">AdminController::bypass<\/a>"],[100,5,"<a href=\"Http\/Controllers\/AdminController.php.html#496\">AdminController::approvedProposalByCommittee<\/a>"],[100,5,"<a href=\"Http\/Controllers\/AdminController.php.html#523\">AdminController::disapprovedProposalByCommittee<\/a>"],[100,2,"<a href=\"Http\/Controllers\/AdminController.php.html#553\">AdminController::timeLimit<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#581\">AdminController::notResponded<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#595\">AdminController::approved<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#609\">AdminController::disapproved<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#623\">AdminController::expired<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#637\">AdminController::approvalGoal<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#651\">AdminController::inCommittee<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#665\">AdminController::approvedByCommittee<\/a>"],[100,1,"<a href=\"Http\/Controllers\/AdminController.php.html#679\">AdminController::disapprovedByCommittee<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#49\">AuthController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#61\">AuthController::validator<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#78\">AuthController::create<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#92\">AuthController::showRegistrationForm<\/a>"],[66.666666666667,3,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#104\">AuthController::showLoginForm<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#120\">AuthController::login<\/a>"],[61.538461538462,3,"<a href=\"Http\/Controllers\/Auth\/AuthController.php.html#133\">AuthController::register<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/PasswordController.php.html#28\">PasswordController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/HomeController.php.html#12\">HomeController::index<\/a>"],[0,3,"<a href=\"Http\/Controllers\/LikesController.php.html#19\">LikesController::like<\/a>"],[0,3,"<a href=\"Http\/Controllers\/LikesController.php.html#67\">LikesController::user_has_already_voted<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LikesController.php.html#96\">LikesController::update_proposal_like<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LikesController.php.html#113\">LikesController::unlike<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LikesController.php.html#124\">LikesController::showCookie<\/a>"],[0,1,"<a href=\"Http\/Controllers\/LikesController.php.html#129\">LikesController::setCookie<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#28\">ProposalsController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#33\">ProposalsController::approval<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#40\">ProposalsController::committee<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#48\">ProposalsController::create<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProposalsController.php.html#60\">ProposalsController::destroy<\/a>"],[60,2,"<a href=\"Http\/Controllers\/ProposalsController.php.html#82\">ProposalsController::edit<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#100\">ProposalsController::finished<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#113\">ProposalsController::follow<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#128\">ProposalsController::index<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#146\">ProposalsController::like<\/a>"],[86.486486486486,9,"<a href=\"Http\/Controllers\/ProposalsController.php.html#151\">ProposalsController::likeUnlike<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#216\">ProposalsController::open<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#223\">ProposalsController::progress<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ProposalsController.php.html#237\">ProposalsController::response<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#251\">ProposalsController::show<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#260\">ProposalsController::store<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#279\">ProposalsController::unlike<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#291\">ProposalsController::update<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ProposalsController.php.html#331\">ProposalsController::updateResponse<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#14\">QueryController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#24\">QueryController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#36\">QueryController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#48\">QueryController::show<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#60\">QueryController::edit<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#73\">QueryController::update<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#85\">QueryController::destroy<\/a>"],[0,1,"<a href=\"Http\/Controllers\/QueryController.php.html#90\">QueryController::search<\/a>"],[0,1,"<a href=\"Http\/Controllers\/SocialAuthController.php.html#12\">SocialAuthController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/SocialAuthController.php.html#17\">SocialAuthController::redirect<\/a>"],[0,2,"<a href=\"Http\/Controllers\/SocialAuthController.php.html#22\">SocialAuthController::socialNetworkCallback<\/a>"],[0,1,"<a href=\"Http\/Controllers\/SocialAuthController.php.html#31\">SocialAuthController::getDriver<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UsersController.php.html#19\">UsersController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UsersController.php.html#31\">UsersController::proposals<\/a>"],[0,1,"<a href=\"Http\/Controllers\/UsersController.php.html#45\">UsersController::responses<\/a>"],[0,1,"<a href=\"Http\/Controllers\/VueItemController.php.html#20\">VueItemController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/VueItemController.php.html#26\">VueItemController::manageVue<\/a>"],[0,1,"<a href=\"Http\/Controllers\/VueItemController.php.html#41\">VueItemController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/VueItemController.php.html#67\">VueItemController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/VueItemController.php.html#92\">VueItemController::update<\/a>"],[0,1,"<a href=\"Http\/Controllers\/VueItemController.php.html#111\">VueItemController::destroy<\/a>"],[0,1,"<a href=\"Http\/Controllers\/WelcomeController.php.html#13\">WelcomeController::index<\/a>"],[66.666666666667,3,"<a href=\"Http\/Middleware\/AdminMiddleware.php.html#31\">AdminMiddleware::handle<\/a>"],[80,3,"<a href=\"Http\/Middleware\/Authenticate.php.html#19\">Authenticate::handle<\/a>"],[66.666666666667,2,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#19\">RedirectIfAuthenticated::handle<\/a>"],[80,2,"<a href=\"Http\/Middleware\/UUIDMiddleware.php.html#18\">UUIDMiddleware::handle<\/a>"],[0,1,"<a href=\"Http\/Requests\/BillProjectFormRequest.php.html#12\">BillProjectFormRequest::authorize<\/a>"],[0,1,"<a href=\"Http\/Requests\/BillProjectFormRequest.php.html#22\">BillProjectFormRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/ContactFormRequest.php.html#13\">ContactFormRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/ContactFormRequest.php.html#18\">ContactFormRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/ProposalFormRequest.php.html#12\">ProposalFormRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/ProposalFormRequest.php.html#22\">ProposalFormRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/ResponseFormRequest.php.html#14\">ResponseFormRequest::authorize<\/a>"],[100,2,"<a href=\"Http\/Requests\/ResponseFormRequest.php.html#24\">ResponseFormRequest::rules<\/a>"],[92.307692307692,2,"<a href=\"Http\/ViewComposers\/StatusComposer.php.html#19\">StatusComposer::compose<\/a>"],[100,1,"<a href=\"Like.php.html#28\">Like::proposal<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalApproved.php.html#20\">EmailProposalApproved::__construct<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalApproved.php.html#32\">EmailProposalApproved::handle<\/a>"],[100,1,"<a href=\"Listeners\/EmailProposalApprovedByCommittee.php.html#20\">EmailProposalApprovedByCommittee::__construct<\/a>"],[100,1,"<a href=\"Listeners\/EmailProposalApprovedByCommittee.php.html#32\">EmailProposalApprovedByCommittee::handle<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalClosed.php.html#20\">EmailProposalClosed::__construct<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalClosed.php.html#32\">EmailProposalClosed::handle<\/a>"],[100,1,"<a href=\"Listeners\/EmailProposalClosedByCommittee.php.html#20\">EmailProposalClosedByCommittee::__construct<\/a>"],[100,1,"<a href=\"Listeners\/EmailProposalClosedByCommittee.php.html#32\">EmailProposalClosedByCommittee::handle<\/a>"],[100,1,"<a href=\"Listeners\/EmailProposalCreator.php.html#20\">EmailProposalCreator::__construct<\/a>"],[100,1,"<a href=\"Listeners\/EmailProposalCreator.php.html#32\">EmailProposalCreator::handle<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalReachedApprovalGoal.php.html#20\">EmailProposalReachedApprovalGoal::__construct<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalReachedApprovalGoal.php.html#32\">EmailProposalReachedApprovalGoal::handle<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalTimeLimit.php.html#20\">EmailProposalTimeLimit::__construct<\/a>"],[0,1,"<a href=\"Listeners\/EmailProposalTimeLimit.php.html#32\">EmailProposalTimeLimit::handle<\/a>"],[100,1,"<a href=\"Policies\/ProposalPolicy.php.html#18\">ProposalPolicy::__construct<\/a>"],[0,1,"<a href=\"Policies\/ProposalPolicy.php.html#31\">ProposalPolicy::bypass<\/a>"],[0,1,"<a href=\"Policies\/ProposalPolicy.php.html#44\">ProposalPolicy::edit<\/a>"],[0,1,"<a href=\"Policies\/ProposalPolicy.php.html#57\">ProposalPolicy::destroy<\/a>"],[0,1,"<a href=\"Policies\/ProposalPolicy.php.html#68\">ProposalPolicy::isProposalOwner<\/a>"],[100,1,"<a href=\"Policies\/ProposalPolicy.php.html#73\">ProposalPolicy::before<\/a>"],[100,1,"<a href=\"Policies\/UserPolicy.php.html#17\">UserPolicy::__construct<\/a>"],[100,1,"<a href=\"Policies\/UserPolicy.php.html#22\">UserPolicy::edit<\/a>"],[0,1,"<a href=\"Policies\/UserPolicy.php.html#27\">UserPolicy::bypass<\/a>"],[100,1,"<a href=\"Proposal.php.html#26\">Proposal::user<\/a>"],[100,1,"<a href=\"Proposal.php.html#32\">Proposal::approvals<\/a>"],[100,1,"<a href=\"Proposal.php.html#38\">Proposal::responder<\/a>"],[0,1,"<a href=\"Proposal.php.html#44\">Proposal::likes<\/a>"],[0,1,"<a href=\"Proposal.php.html#50\">Proposal::bill_project<\/a>"],[0,3,"<a href=\"Proposal.php.html#56\">Proposal::getRatingAttribute<\/a>"],[100,1,"<a href=\"Proposal.php.html#72\">Proposal::getLikeCountAttribute<\/a>"],[100,1,"<a href=\"Proposal.php.html#77\">Proposal::getUnlikeCountAttribute<\/a>"],[0,1,"<a href=\"Proposal.php.html#82\">Proposal::getTotalLikeCountAttribute<\/a>"],[0,1,"<a href=\"Proposal.php.html#87\">Proposal::getApprovalsCountAttribute<\/a>"],[100,1,"<a href=\"ProposalFollow.php.html#23\">ProposalFollow::proposal<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#16\">AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#26\">AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#29\">AppServiceProvider::anonymous function<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#32\">AuthServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#52\">EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#26\">RouteServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#40\">RouteServiceProvider::map<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#42\">RouteServiceProvider::anonymous function<\/a>"],[100,1,"<a href=\"Repositories\/DataRepository.php.html#16\">DataRepository::getStates<\/a>"],[100,1,"<a href=\"Repositories\/DataRepository.php.html#21\">DataRepository::getRoles<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#24\">ProposalsRepository::all<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#29\">ProposalsRepository::find<\/a>"],[76.923076923077,4,"<a href=\"Repositories\/ProposalsRepository.php.html#34\">ProposalsRepository::approve<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#62\">ProposalsRepository::toCommittee<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#73\">ProposalsRepository::setApprovalGoal<\/a>"],[100,5,"<a href=\"Repositories\/ProposalsRepository.php.html#84\">ProposalsRepository::publish<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#99\">ProposalsRepository::notResponded<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#108\">ProposalsRepository::approved<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#115\">ProposalsRepository::disapproved<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#122\">ProposalsRepository::expired<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#129\">ProposalsRepository::approvalGoal<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#137\">ProposalsRepository::inCommittee<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#147\">ProposalsRepository::approvedByCommittee<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#154\">ProposalsRepository::disapprovedByCommittee<\/a>"],[0,3,"<a href=\"Repositories\/ProposalsRepository.php.html#161\">ProposalsRepository::timeLimit<\/a>"],[0,1,"<a href=\"Repositories\/ProposalsRepository.php.html#179\">ProposalsRepository::storeBillProject<\/a>"],[0,1,"<a href=\"Repositories\/ProposalsRepository.php.html#205\">ProposalsRepository::forUser<\/a>"],[0,1,"<a href=\"Repositories\/ProposalsRepository.php.html#219\">ProposalsRepository::getResponsesForUser<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#226\">ProposalsRepository::sendProposalToCreator<\/a>"],[100,2,"<a href=\"Repositories\/ProposalsRepository.php.html#356\">ProposalsRepository::anonymous function<\/a>"],[0,1,"<a href=\"Repositories\/ProposalsRepository.php.html#242\">ProposalsRepository::sendProposalApprovalGoalNotification<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#256\">ProposalsRepository::sendProposalApprovedByCommittee<\/a>"],[100,1,"<a href=\"Repositories\/ProposalsRepository.php.html#270\">ProposalsRepository::sendProposalClosedByCommittee<\/a>"],[0,1,"<a href=\"Repositories\/ProposalsRepository.php.html#284\">ProposalsRepository::sendProposalTimeLimit<\/a>"],[0,1,"<a href=\"Repositories\/ProposalsRepository.php.html#298\">ProposalsRepository::sendProposalClosed<\/a>"],[100,7,"<a href=\"Repositories\/ProposalsRepository.php.html#315\">ProposalsRepository::filterProposals<\/a>"],[100,2,"<a href=\"Repositories\/ProposalsRepository.php.html#354\">ProposalsRepository::buildSearch<\/a>"],[0,1,"<a href=\"Repositories\/SocialUserRepository.php.html#19\">SocialUserRepository::find<\/a>"],[0,1,"<a href=\"Repositories\/SocialUserRepository.php.html#26\">SocialUserRepository::destroy<\/a>"],[0,3,"<a href=\"Repositories\/SocialUserRepository.php.html#31\">SocialUserRepository::createUser<\/a>"],[100,3,"<a href=\"Repositories\/UsersRepository.php.html#18\">UsersRepository::all<\/a>"],[100,1,"<a href=\"Repositories\/UsersRepository.php.html#33\">UsersRepository::find<\/a>"],[0,1,"<a href=\"Repositories\/UsersRepository.php.html#38\">UsersRepository::destroy<\/a>"],[0,1,"<a href=\"Repositories\/UsersRepository.php.html#43\">UsersRepository::findByEmail<\/a>"],[100,1,"<a href=\"Repositories\/UsersRepository.php.html#50\">UsersRepository::storeUser<\/a>"],[100,1,"<a href=\"Role.php.html#18\">Role::user<\/a>"],[0,1,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#21\">SocialUserService::__construct<\/a>"],[0,1,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#27\">SocialUserService::find<\/a>"],[0,1,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#47\">SocialUserService::login<\/a>"],[0,2,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#52\">SocialUserService::getEmail<\/a>"],[0,2,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#57\">SocialUserService::findOrCreateUser<\/a>"],[0,1,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#68\">SocialUserService::getSocialNetwork<\/a>"],[0,2,"<a href=\"Services\/SocialLogin\/SocialUserService.php.html#75\">SocialUserService::findOrCreateUserSocialNetwork<\/a>"],[0,1,"<a href=\"SocialNetwork.php.html#20\">SocialNetwork::getSocialNetwork<\/a>"],[0,1,"<a href=\"SocialNetwork.php.html#26\">SocialNetwork::users<\/a>"],[0,1,"<a href=\"SocialUser.php.html#16\">SocialUser::find<\/a>"],[0,1,"<a href=\"SocialUser.php.html#22\">SocialUser::user<\/a>"],[100,1,"<a href=\"State.php.html#22\">State::user<\/a>"],[100,1,"<a href=\"State.php.html#27\">State::getUfAttribute<\/a>"],[0,1,"<a href=\"Support\/StateSeederSupport.php.html#10\">StateSeederSupport::run<\/a>"],[100,1,"<a href=\"User.php.html#41\">User::approvals<\/a>"],[100,3,"<a href=\"User.php.html#68\">User::getIsAdminAttribute<\/a>"],[100,1,"<a href=\"User.php.html#74\">User::getIsSuperUserAttribute<\/a>"],[0,2,"<a href=\"User.php.html#80\">User::getIsCommitteeUserAttribute<\/a>"],[100,1,"<a href=\"User.php.html#86\">User::getRoleNameAttribute<\/a>"],[100,1,"<a href=\"User.php.html#92\">User::getProposalsCountAttribute<\/a>"],[100,1,"<a href=\"User.php.html#98\">User::getLikesCountAttribute<\/a>"],[100,1,"<a href=\"User.php.html#104\">User::getApprovalsCountAttribute<\/a>"],[100,1,"<a href=\"User.php.html#110\">User::getProposalsRespondedCountAttribute<\/a>"],[100,1,"<a href=\"User.php.html#115\">User::getAvatarAttribute<\/a>"],[100,1,"<a href=\"User.php.html#120\">User::getCreatedAtAttribute<\/a>"],[0,1,"<a href=\"User.php.html#125\">User::getUserByEmail<\/a>"],[0,1,"<a href=\"User.php.html#131\">User::socialNetworks<\/a>"],[0,1,"<a href=\"User.php.html#136\">User::socialUser<\/a>"],[100,1,"<a href=\"User.php.html#142\">User::getUsersCommon<\/a>"],[100,1,"<a href=\"User.php.html#148\">User::getUsersAdm<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

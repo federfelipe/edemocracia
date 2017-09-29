@@ -5,6 +5,14 @@ use App\State;
 class UsersTest extends TestCase
 {
 
+    public function testHome()
+    {
+        $this->visit('/')
+            ->click('INÍCIO')
+            ->seePageIs('/');
+    }
+
+
     /*
   public function testSocialNetworks()
  {

@@ -19,7 +19,7 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\ProposalApproved' => [
             'App\Listeners\EmailProposalApproved',
         ],
-        'App\Events\ProposalClosed' => [
+        'App\Events\ProposalClosed' => [         // AQUI
             'App\Listeners\EmailProposalClosed',
         ],
         'App\Events\ProposalReachedApprovalGoal' => [

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/vagrant/Code/edemocracia/app/Http</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/home/vagrant/Code/edemocracia/app</a></li>
+        <li><a href="index.html">Http</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controllers/Auth/PasswordController.php.html#8">PasswordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/HomeController.php.html#5">HomeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#12">LikesController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#7">QueryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SocialAuthController.php.html#8">SocialAuthController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UsersController.php.html#15">UsersController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/VueItemController.php.html#16">VueItemController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/WelcomeController.php.html#11">WelcomeController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Requests/BillProjectFormRequest.php.html#5">BillProjectFormRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#21">ProposalsController</a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="Middleware/AdminMiddleware.php.html#8">AdminMiddleware</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#8">RedirectIfAuthenticated</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#15">AuthController</a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#8">Authenticate</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Middleware/UUIDMiddleware.php.html#8">UUIDMiddleware</a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controllers/LikesController.php.html#12">LikesController</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#21">ProposalsController</a></td><td class="text-right">74</td></tr>
+       <tr><td><a href="Controllers/SocialAuthController.php.html#8">SocialAuthController</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#15">AuthController</a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Middleware/AdminMiddleware.php.html#8">AdminMiddleware</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#8">Authenticate</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#8">RedirectIfAuthenticated</a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Middleware/UUIDMiddleware.php.html#8">UUIDMiddleware</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Requests/BillProjectFormRequest.php.html#22"><abbr title="BillProjectFormRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UsersController.php.html#19"><abbr title="UsersController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#60"><abbr title="QueryController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#73"><abbr title="QueryController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#85"><abbr title="QueryController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#90"><abbr title="QueryController::search">search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SocialAuthController.php.html#12"><abbr title="SocialAuthController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SocialAuthController.php.html#17"><abbr title="SocialAuthController::redirect">redirect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SocialAuthController.php.html#22"><abbr title="SocialAuthController::socialNetworkCallback">socialNetworkCallback</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SocialAuthController.php.html#31"><abbr title="SocialAuthController::getDriver">getDriver</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UsersController.php.html#31"><abbr title="UsersController::proposals">proposals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#36"><abbr title="QueryController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UsersController.php.html#45"><abbr title="UsersController::responses">responses</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/VueItemController.php.html#20"><abbr title="VueItemController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/VueItemController.php.html#26"><abbr title="VueItemController::manageVue">manageVue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/VueItemController.php.html#41"><abbr title="VueItemController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/VueItemController.php.html#67"><abbr title="VueItemController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/VueItemController.php.html#92"><abbr title="VueItemController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/VueItemController.php.html#111"><abbr title="VueItemController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/WelcomeController.php.html#13"><abbr title="WelcomeController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Requests/BillProjectFormRequest.php.html#12"><abbr title="BillProjectFormRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#92"><abbr title="AuthController::showRegistrationForm">showRegistrationForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#48"><abbr title="QueryController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#24"><abbr title="QueryController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#129"><abbr title="LikesController::setCookie">setCookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Auth/PasswordController.php.html#28"><abbr title="PasswordController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/HomeController.php.html#12"><abbr title="HomeController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#19"><abbr title="LikesController::like">like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#67"><abbr title="LikesController::user_has_already_voted">user_has_already_voted</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#96"><abbr title="LikesController::update_proposal_like">update_proposal_like</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/QueryController.php.html#14"><abbr title="QueryController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#124"><abbr title="LikesController::showCookie">showCookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#113"><abbr title="LikesController::unlike">unlike</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#40"><abbr title="ProposalsController::committee">committee</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#60"><abbr title="ProposalsController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#100"><abbr title="ProposalsController::finished">finished</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#216"><abbr title="ProposalsController::open">open</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#223"><abbr title="ProposalsController::progress">progress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#237"><abbr title="ProposalsController::response">response</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#331"><abbr title="ProposalsController::updateResponse">updateResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#82"><abbr title="ProposalsController::edit">edit</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#133"><abbr title="AuthController::register">register</abbr></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="Middleware/AdminMiddleware.php.html#31"><abbr title="AdminMiddleware::handle">handle</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#104"><abbr title="AuthController::showLoginForm">showLoginForm</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Controllers/AdminController.php.html#356"><abbr title="AdminController::approvedProposal">approvedProposal</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#19"><abbr title="Authenticate::handle">handle</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Middleware/UUIDMiddleware.php.html#18"><abbr title="UUIDMiddleware::handle">handle</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#151"><abbr title="ProposalsController::likeUnlike">likeUnlike</abbr></a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controllers/LikesController.php.html#19"><abbr title="LikesController::like">like</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/LikesController.php.html#67"><abbr title="LikesController::user_has_already_voted">user_has_already_voted</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#151"><abbr title="ProposalsController::likeUnlike">likeUnlike</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#92"><abbr title="AuthController::showRegistrationForm">showRegistrationForm</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#60"><abbr title="ProposalsController::destroy">destroy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#237"><abbr title="ProposalsController::response">response</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/SocialAuthController.php.html#22"><abbr title="SocialAuthController::socialNetworkCallback">socialNetworkCallback</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#133"><abbr title="AuthController::register">register</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Controllers/Auth/AuthController.php.html#104"><abbr title="AuthController::showLoginForm">showLoginForm</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Middleware/AdminMiddleware.php.html#31"><abbr title="AdminMiddleware::handle">handle</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#19"><abbr title="Authenticate::handle">handle</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Controllers/ProposalsController.php.html#82"><abbr title="ProposalsController::edit">edit</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Controllers/AdminController.php.html#356"><abbr title="AdminController::approvedProposal">approvedProposal</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Middleware/UUIDMiddleware.php.html#18"><abbr title="UUIDMiddleware::handle">handle</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.5-2+deb.sury.org~trusty+1</a> and <a href="https://phpunit.de/">PHPUnit 4.8.27</a> at Wed Jul 19 17:55:55 UTC 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([9,0,0,0,0,0,0,3,1,2,2,9], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([40,0,0,0,0,0,0,6,0,3,1,60], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,6,"<a href=\"Controllers\/AboutController.php.html#13\">AboutController<\/a>"],[99.019607843137,53,"<a href=\"Controllers\/AdminController.php.html#28\">AdminController<\/a>"],[71.794871794872,12,"<a href=\"Controllers\/Auth\/AuthController.php.html#15\">AuthController<\/a>"],[0,1,"<a href=\"Controllers\/Auth\/PasswordController.php.html#8\">PasswordController<\/a>"],[100,0,"<a href=\"Controllers\/Controller.php.html#12\">Controller<\/a>"],[0,1,"<a href=\"Controllers\/HomeController.php.html#5\">HomeController<\/a>"],[0,10,"<a href=\"Controllers\/LikesController.php.html#12\">LikesController<\/a>"],[63.28125,30,"<a href=\"Controllers\/ProposalsController.php.html#21\">ProposalsController<\/a>"],[0,8,"<a href=\"Controllers\/QueryController.php.html#7\">QueryController<\/a>"],[0,5,"<a href=\"Controllers\/SocialAuthController.php.html#8\">SocialAuthController<\/a>"],[0,3,"<a href=\"Controllers\/UsersController.php.html#15\">UsersController<\/a>"],[0,6,"<a href=\"Controllers\/VueItemController.php.html#16\">VueItemController<\/a>"],[0,1,"<a href=\"Controllers\/WelcomeController.php.html#11\">WelcomeController<\/a>"],[100,0,"<a href=\"Kernel.php.html#7\">Kernel<\/a>"],[66.666666666667,3,"<a href=\"Middleware\/AdminMiddleware.php.html#8\">AdminMiddleware<\/a>"],[80,3,"<a href=\"Middleware\/Authenticate.php.html#8\">Authenticate<\/a>"],[100,0,"<a href=\"Middleware\/EncryptCookies.php.html#7\">EncryptCookies<\/a>"],[66.666666666667,2,"<a href=\"Middleware\/RedirectIfAuthenticated.php.html#8\">RedirectIfAuthenticated<\/a>"],[80,2,"<a href=\"Middleware\/UUIDMiddleware.php.html#8\">UUIDMiddleware<\/a>"],[100,0,"<a href=\"Middleware\/VerifyCsrfToken.php.html#7\">VerifyCsrfToken<\/a>"],[0,2,"<a href=\"Requests\/BillProjectFormRequest.php.html#5\">BillProjectFormRequest<\/a>"],[100,2,"<a href=\"Requests\/ContactFormRequest.php.html#11\">ContactFormRequest<\/a>"],[100,2,"<a href=\"Requests\/ProposalFormRequest.php.html#5\">ProposalFormRequest<\/a>"],[100,0,"<a href=\"Requests\/Request.php.html#7\">Request<\/a>"],[100,3,"<a href=\"Requests\/ResponseFormRequest.php.html#7\">ResponseFormRequest<\/a>"],[92.307692307692,2,"<a href=\"ViewComposers\/StatusComposer.php.html#17\">StatusComposer<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Controllers\/AboutController.php.html#15\">AboutController::index<\/a>"],[100,1,"<a href=\"Controllers\/AboutController.php.html#21\">AboutController::committee<\/a>"],[100,1,"<a href=\"Controllers\/AboutController.php.html#26\">AboutController::terms<\/a>"],[100,1,"<a href=\"Controllers\/AboutController.php.html#31\">AboutController::create<\/a>"],[100,1,"<a href=\"Controllers\/AboutController.php.html#45\">AboutController::store<\/a>"],[100,1,"<a href=\"Controllers\/AboutController.php.html#54\">AboutController::anonymous function<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#37\">AdminController::__construct<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#44\">AdminController::index<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#49\">AdminController::users<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#57\">AdminController::showUser<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#71\">AdminController::createUser<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#87\">AdminController::storeUser<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#101\">AdminController::editUser<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#116\">AdminController::updateUser<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#137\">AdminController::destroyUser<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#149\">AdminController::proposals<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#163\">AdminController::showProposal<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#179\">AdminController::createProposal<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#191\">AdminController::storeProposal<\/a>"],[100,2,"<a href=\"Controllers\/AdminController.php.html#215\">AdminController::editProposal<\/a>"],[100,2,"<a href=\"Controllers\/AdminController.php.html#240\">AdminController::billProject<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#265\">AdminController::updateProposal<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#302\">AdminController::updateBillProject<\/a>"],[100,2,"<a href=\"Controllers\/AdminController.php.html#335\">AdminController::destroyProposal<\/a>"],[66.666666666667,2,"<a href=\"Controllers\/AdminController.php.html#356\">AdminController::approvedProposal<\/a>"],[100,5,"<a href=\"Controllers\/AdminController.php.html#374\">AdminController::disapprovedProposal<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#412\">AdminController::response<\/a>"],[100,2,"<a href=\"Controllers\/AdminController.php.html#428\">AdminController::updateResponse<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#473\">AdminController::toCommittee<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#480\">AdminController::bypass<\/a>"],[100,5,"<a href=\"Controllers\/AdminController.php.html#496\">AdminController::approvedProposalByCommittee<\/a>"],[100,5,"<a href=\"Controllers\/AdminController.php.html#523\">AdminController::disapprovedProposalByCommittee<\/a>"],[100,2,"<a href=\"Controllers\/AdminController.php.html#553\">AdminController::timeLimit<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#581\">AdminController::notResponded<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#595\">AdminController::approved<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#609\">AdminController::disapproved<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#623\">AdminController::expired<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#637\">AdminController::approvalGoal<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#651\">AdminController::inCommittee<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#665\">AdminController::approvedByCommittee<\/a>"],[100,1,"<a href=\"Controllers\/AdminController.php.html#679\">AdminController::disapprovedByCommittee<\/a>"],[100,1,"<a href=\"Controllers\/Auth\/AuthController.php.html#49\">AuthController::__construct<\/a>"],[100,1,"<a href=\"Controllers\/Auth\/AuthController.php.html#61\">AuthController::validator<\/a>"],[100,1,"<a href=\"Controllers\/Auth\/AuthController.php.html#78\">AuthController::create<\/a>"],[0,2,"<a href=\"Controllers\/Auth\/AuthController.php.html#92\">AuthController::showRegistrationForm<\/a>"],[66.666666666667,3,"<a href=\"Controllers\/Auth\/AuthController.php.html#104\">AuthController::showLoginForm<\/a>"],[100,1,"<a href=\"Controllers\/Auth\/AuthController.php.html#120\">AuthController::login<\/a>"],[61.538461538462,3,"<a href=\"Controllers\/Auth\/AuthController.php.html#133\">AuthController::register<\/a>"],[0,1,"<a href=\"Controllers\/Auth\/PasswordController.php.html#28\">PasswordController::__construct<\/a>"],[0,1,"<a href=\"Controllers\/HomeController.php.html#12\">HomeController::index<\/a>"],[0,3,"<a href=\"Controllers\/LikesController.php.html#19\">LikesController::like<\/a>"],[0,3,"<a href=\"Controllers\/LikesController.php.html#67\">LikesController::user_has_already_voted<\/a>"],[0,1,"<a href=\"Controllers\/LikesController.php.html#96\">LikesController::update_proposal_like<\/a>"],[0,1,"<a href=\"Controllers\/LikesController.php.html#113\">LikesController::unlike<\/a>"],[0,1,"<a href=\"Controllers\/LikesController.php.html#124\">LikesController::showCookie<\/a>"],[0,1,"<a href=\"Controllers\/LikesController.php.html#129\">LikesController::setCookie<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#28\">ProposalsController::__construct<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#33\">ProposalsController::approval<\/a>"],[0,1,"<a href=\"Controllers\/ProposalsController.php.html#40\">ProposalsController::committee<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#48\">ProposalsController::create<\/a>"],[0,2,"<a href=\"Controllers\/ProposalsController.php.html#60\">ProposalsController::destroy<\/a>"],[60,2,"<a href=\"Controllers\/ProposalsController.php.html#82\">ProposalsController::edit<\/a>"],[0,1,"<a href=\"Controllers\/ProposalsController.php.html#100\">ProposalsController::finished<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#113\">ProposalsController::follow<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#128\">ProposalsController::index<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#146\">ProposalsController::like<\/a>"],[86.486486486486,9,"<a href=\"Controllers\/ProposalsController.php.html#151\">ProposalsController::likeUnlike<\/a>"],[0,1,"<a href=\"Controllers\/ProposalsController.php.html#216\">ProposalsController::open<\/a>"],[0,1,"<a href=\"Controllers\/ProposalsController.php.html#223\">ProposalsController::progress<\/a>"],[0,2,"<a href=\"Controllers\/ProposalsController.php.html#237\">ProposalsController::response<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#251\">ProposalsController::show<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#260\">ProposalsController::store<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#279\">ProposalsController::unlike<\/a>"],[100,1,"<a href=\"Controllers\/ProposalsController.php.html#291\">ProposalsController::update<\/a>"],[0,1,"<a href=\"Controllers\/ProposalsController.php.html#331\">ProposalsController::updateResponse<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#14\">QueryController::index<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#24\">QueryController::create<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#36\">QueryController::store<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#48\">QueryController::show<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#60\">QueryController::edit<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#73\">QueryController::update<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#85\">QueryController::destroy<\/a>"],[0,1,"<a href=\"Controllers\/QueryController.php.html#90\">QueryController::search<\/a>"],[0,1,"<a href=\"Controllers\/SocialAuthController.php.html#12\">SocialAuthController::__construct<\/a>"],[0,1,"<a href=\"Controllers\/SocialAuthController.php.html#17\">SocialAuthController::redirect<\/a>"],[0,2,"<a href=\"Controllers\/SocialAuthController.php.html#22\">SocialAuthController::socialNetworkCallback<\/a>"],[0,1,"<a href=\"Controllers\/SocialAuthController.php.html#31\">SocialAuthController::getDriver<\/a>"],[0,1,"<a href=\"Controllers\/UsersController.php.html#19\">UsersController::__construct<\/a>"],[0,1,"<a href=\"Controllers\/UsersController.php.html#31\">UsersController::proposals<\/a>"],[0,1,"<a href=\"Controllers\/UsersController.php.html#45\">UsersController::responses<\/a>"],[0,1,"<a href=\"Controllers\/VueItemController.php.html#20\">VueItemController::__construct<\/a>"],[0,1,"<a href=\"Controllers\/VueItemController.php.html#26\">VueItemController::manageVue<\/a>"],[0,1,"<a href=\"Controllers\/VueItemController.php.html#41\">VueItemController::index<\/a>"],[0,1,"<a href=\"Controllers\/VueItemController.php.html#67\">VueItemController::store<\/a>"],[0,1,"<a href=\"Controllers\/VueItemController.php.html#92\">VueItemController::update<\/a>"],[0,1,"<a href=\"Controllers\/VueItemController.php.html#111\">VueItemController::destroy<\/a>"],[0,1,"<a href=\"Controllers\/WelcomeController.php.html#13\">WelcomeController::index<\/a>"],[66.666666666667,3,"<a href=\"Middleware\/AdminMiddleware.php.html#31\">AdminMiddleware::handle<\/a>"],[80,3,"<a href=\"Middleware\/Authenticate.php.html#19\">Authenticate::handle<\/a>"],[66.666666666667,2,"<a href=\"Middleware\/RedirectIfAuthenticated.php.html#19\">RedirectIfAuthenticated::handle<\/a>"],[80,2,"<a href=\"Middleware\/UUIDMiddleware.php.html#18\">UUIDMiddleware::handle<\/a>"],[0,1,"<a href=\"Requests\/BillProjectFormRequest.php.html#12\">BillProjectFormRequest::authorize<\/a>"],[0,1,"<a href=\"Requests\/BillProjectFormRequest.php.html#22\">BillProjectFormRequest::rules<\/a>"],[100,1,"<a href=\"Requests\/ContactFormRequest.php.html#13\">ContactFormRequest::authorize<\/a>"],[100,1,"<a href=\"Requests\/ContactFormRequest.php.html#18\">ContactFormRequest::rules<\/a>"],[100,1,"<a href=\"Requests\/ProposalFormRequest.php.html#12\">ProposalFormRequest::authorize<\/a>"],[100,1,"<a href=\"Requests\/ProposalFormRequest.php.html#22\">ProposalFormRequest::rules<\/a>"],[100,1,"<a href=\"Requests\/ResponseFormRequest.php.html#14\">ResponseFormRequest::authorize<\/a>"],[100,2,"<a href=\"Requests\/ResponseFormRequest.php.html#24\">ResponseFormRequest::rules<\/a>"],[92.307692307692,2,"<a href=\"ViewComposers\/StatusComposer.php.html#19\">StatusComposer::compose<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
