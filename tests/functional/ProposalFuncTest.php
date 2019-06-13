@@ -1,6 +1,5 @@
 <?php
 
-use App\State;
 use App\Proposal;
 use App\User;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
@@ -11,7 +10,6 @@ use Laravel\Socialite\Facades\Socialite;
 
 class ProposalFuncTest extends TestCase
 {
-
     use DatabaseTransactions;
 
     public function testCreateProposalMainButton()
@@ -32,7 +30,8 @@ class ProposalFuncTest extends TestCase
             ->seeInDatabase('proposals', ['name' => $proposal->name]);
     }
 
-    public function testCreateProposalBySecondButton() {
+    public function testCreateProposalBySecondButton()
+    {
         $proposal = factory(App\Proposal::class)->create();
         $user = User::all()->random();
 
@@ -72,7 +71,8 @@ class ProposalFuncTest extends TestCase
             ->see('Esta Ideia Legislativa será acompanhada');
     }
 
-    public function testUserEditIdea() {
+    public function testUserEditIdea()
+    {
         $proposal = factory(App\Proposal::class)->create();
         $user = User::all()->random();
 
@@ -89,7 +89,6 @@ class ProposalFuncTest extends TestCase
             ->seePageIs('/')
             ->seeInDatabase('proposals', ['name' => $proposal->name]);
     }
-
     public function testAdminModeratingProposalApprove() {
         $user = factory(App\User::class, 'admin')->create();
         $proposal = Proposal::all()->random();
@@ -275,7 +274,4 @@ class ProposalFuncTest extends TestCase
         $this->visit('/auth/facebook/callback');
 
      }
-
-
-
 }

@@ -1,10 +1,8 @@
 <?php
 
-use App\State;
 
 class UsersTest extends TestCase
 {
-
     public function testHome()
     {
         $this->visit('/')
@@ -12,8 +10,7 @@ class UsersTest extends TestCase
             ->seePageIs('/');
     }
 
-
-    /*
+  /*
   public function testSocialNetworks()
  {
      //$user = factory(App\User::class, 'admin')->create();
@@ -29,5 +26,4 @@ class UsersTest extends TestCase
       $user = factory(App\User::class)->create();
 
   }*/
-
 }

@@ -858,7 +858,7 @@ button {
 
 
 .panel-body {
-    padding: 0;
+    padding: 20px !important;
 }
 
 .panel-default h1 {
@@ -1648,4 +1648,12 @@ button.btn.btn-default.glyphicon.glyphicon-search.form-control-feedback.dimensio
     margin-top: 10px;
     padding-top: 0;
     pointer-events: all;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.double {
+    font-size: 1.2em;
 }

@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class ModifyBillProjectTable extends Migration
 {
@@ -25,11 +25,9 @@ class ModifyBillProjectTable extends Migration
      */
     public function down()
     {
-        Schema::table('bills_project', function($table) {
+        Schema::table('bills_project', function ($table) {
             $table->date('date')->nullable();
             $table->dropColumn('year');
         });
     }
 }
-
-

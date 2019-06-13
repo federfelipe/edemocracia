@@ -56,9 +56,9 @@ class Proposal extends Eloquent
     /*public function getRatingAttribute()
     {
         $like = $this->like_count;
-      //$like = Like::where('proposal_id', $this->id)->where('like', 1)->count();
+        //$like = Like::where('proposal_id', $this->id)->where('like', 1)->count();
         $unlike = $this->unlike_count;
-      //$unlike = Like::where('proposal_id', $this->id)->where('like', 0)->count();
+        //$unlike = Like::where('proposal_id', $this->id)->where('like', 0)->count();
 
         if ($like == 0 && $unlike == 0) {
             return 0;

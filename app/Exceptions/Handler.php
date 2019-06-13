@@ -50,7 +50,7 @@ class Handler extends ExceptionHandler
     {
         if ($e instanceof \Illuminate\Session\TokenMismatchException) {
             return redirect()->back()->withInput($request->except('_token'))->with('flash_msg', 'Sua sessão provavelmente expirou, por favor tente novamente.');
-//          return response()->view('errors.custom', [], 500);
+            //          return response()->view('errors.custom', [], 500);
         }
 
  /*       if($this->isHttpException($e))
@@ -75,5 +75,4 @@ class Handler extends ExceptionHandler
 
         return parent::render($request, $e);
     }
-
 }

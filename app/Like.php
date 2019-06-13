@@ -17,10 +17,10 @@ class Like extends Eloquent
     protected $fillable = ['user_id', 'proposal_id', 'uuid', 'ip_address', 'like'];
     protected $table = 'likes';
 
-//    public function owner()
-//    {
-//        return $this->belongsTo(Proposal::class, 'proposal_id');
-//    }
+    //    public function owner()
+    //    {
+    //        return $this->belongsTo(Proposal::class, 'proposal_id');
+    //    }
 
     /**
      * Get the proposal that owns the like.

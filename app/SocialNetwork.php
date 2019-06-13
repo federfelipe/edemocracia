@@ -22,7 +22,7 @@ class SocialNetwork extends Model
         return self::find(4);
     }
 
-     // Socialite
+    // Socialite
     public function users()
     {
         return $this->belongsToMany('App\User', 'social_users', 'social_network_id')->withPivot('social_network_user_id', 'data');

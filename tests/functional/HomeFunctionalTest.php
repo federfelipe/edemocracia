@@ -2,11 +2,10 @@
 
 class HomeFunctionalTest extends TestCase
 {
-
-
     public function testHome()
     {
         $this->visit('/')
+
                 ->click('INÍCIO')
             ->seePageIs('/');
     }

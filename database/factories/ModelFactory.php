@@ -20,7 +20,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
 //    $state = factory(App\State::class)->create();
 
-//    dd($state->getUfAttribute());
+    //    dd($state->getUfAttribute());
     return [
         'name'  => $faker->name,
         'email' => $faker->email,

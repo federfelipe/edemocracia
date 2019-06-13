@@ -263,8 +263,8 @@ class AdminController extends Controller
 
         $input['user_id'] = Auth::user()->id;
         $input['open'] = true;
-//        $input['pub_date'] = Carbon::now();
-//        $input['limit_date'] = Carbon::now();
+        //        $input['pub_date'] = Carbon::now();
+        //        $input['limit_date'] = Carbon::now();
 
         //Create ProposalHistory Object
         $proposal_history = new ProposalHistory();
@@ -378,17 +378,17 @@ class AdminController extends Controller
             $proposal->disapproved_at = Carbon::now();
             $proposal->disapproved_by = Auth::user()->id;
 
-                // Close
-                $proposal->open = false;
-                // and Save
-                //$proposal->forcefill($input)->save();
-                $proposal->save();
+            // Close
+            $proposal->open = false;
+            // and Save
+            //$proposal->forcefill($input)->save();
+            $proposal->save();
 
-                //Fire Event
-                event(new ProposalClosed($proposal));
+            //Fire Event
+            event(new ProposalClosed($proposal));
 
-                //return redirect()->back()->with(compact('proposal'))->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada com Sucesso');
-//                return redirect()->route('admin.proposal.show', ['id' => $id])->with(compact('proposal'))->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada e Respondida com Sucesso.');
+            //return redirect()->back()->with(compact('proposal'))->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada com Sucesso');
+            //                return redirect()->route('admin.proposal.show', ['id' => $id])->with(compact('proposal'))->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada e Respondida com Sucesso.');
             return redirect()->route('admin.proposals')->with(compact('proposal'))->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada e Respondida com Sucesso.');
         } else {
             return redirect()->back()->with(compact('proposal'))->with('admin_error_msg', 'Ideia Legislativa já foi Moderada!');
@@ -454,7 +454,7 @@ class AdminController extends Controller
             //Then update Proposal
             $proposal->forcefill($input)->save();
             // dd($proposal);
-//            return redirect()->route('admin.proposal.show', ['id' => $id])->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada e Respondida com Sucesso');
+            //            return redirect()->route('admin.proposal.show', ['id' => $id])->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada e Respondida com Sucesso');
             return redirect()->route('admin.proposals')->with('admin_proposal_crud_msg', 'Ideia Legislativa Desaprovada e Respondida com Sucesso');
         }
         //Approval
@@ -588,7 +588,6 @@ class AdminController extends Controller
     public function approved()
     {
         $proposals = $this->proposalsRepository->approved();
-
 
         return view('admin.proposals.approved')->with('approveds', $proposals);
     }

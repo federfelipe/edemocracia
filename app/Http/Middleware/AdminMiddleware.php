@@ -15,18 +15,18 @@ class AdminMiddleware
      *
      * @return mixed
      */
-//    public function handle($request, Closure $next)
-//    {
-//        //$response = $next($request);
-//
-//        // $request->user() returns an instance of the authenticated user...
-//        if ( !$request->user() || !$request->user()->isAdmin()) {
-//            return redirect('/');
-//        }
-//
-////        return $response;
-//        return $next($request);
-//    }
+    //    public function handle($request, Closure $next)
+    //    {
+    //        //$response = $next($request);
+    //
+    //        // $request->user() returns an instance of the authenticated user...
+    //        if ( !$request->user() || !$request->user()->isAdmin()) {
+    //            return redirect('/');
+    //        }
+    //
+    ////        return $response;
+    //        return $next($request);
+    //    }
 
     public function handle($request, Closure $next)
     {

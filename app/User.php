@@ -29,36 +29,36 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-     /* EM TESTE DE USO - NÃO MEXER     não está usando esse código, porém no 'User/Show' há uma menção $user->proposals_count
-        User has many Proposals*/
+    /* EM TESTE DE USO - NÃO MEXER     não está usando esse código, porém no 'User/Show' há uma menção $user->proposals_count
+       User has many Proposals*/
     /*public function proposals()
     {
         return $this->hasMany(Proposal::class);
     }*/
 
-       /* EM TESTE DE USO - NÃO MEXER    ESTÁ SENDO USADA! - 'APOIAR UMA IDEIA'/'APOIAR PROPOSTA *************
-       User approvals Proposals */
+    /* EM TESTE DE USO - NÃO MEXER    ESTÁ SENDO USADA! - 'APOIAR UMA IDEIA'/'APOIAR PROPOSTA *************
+    User approvals Proposals */
     public function approvals()
     {
         return $this->belongsToMany(Proposal::class, 'approvals', 'user_id', 'proposal_id');
     }
 
-       /*EM TESTE DE USO - NÃO MEXER    não está usando esse código, porém no 'User/Show' há uma menção $user->likes_count
-        User likes Proposals*/
+    /*EM TESTE DE USO - NÃO MEXER    não está usando esse código, porém no 'User/Show' há uma menção $user->likes_count
+     User likes Proposals*/
     /*public function likes()
     {
         return $this->belongsToMany(Proposal::class, 'likes', 'user_id', 'proposal_id');
     }*/
 
-       /* EM TESTE DE USO - NÃO MEXER     Não está sendo usado!
-        User has only one State*/
-   /* public function states()
-    {
-        return $this->hasOne(State::class);
-    }*/
+    /* EM TESTE DE USO - NÃO MEXER     Não está sendo usado!
+     User has only one State*/
+    /* public function states()
+     {
+         return $this->hasOne(State::class);
+     }*/
 
-        /*EM TESTE DE USO - NÃO MEXER    Não está sendo usado!
-        User has one Role*/
+    /*EM TESTE DE USO - NÃO MEXER    Não está sendo usado!
+    User has one Role*/
     /*public function roles()
     {
         return $this->hasOne(Role::class, 'id');
@@ -83,10 +83,10 @@ class User extends Authenticatable
     }
 
     // Get Role Name
-        public function getRoleNameAttribute()
-        {
-            return Role::find($this->role_id)->role;
-        }
+    public function getRoleNameAttribute()
+    {
+        return Role::find($this->role_id)->role;
+    }
 
     // Get Proposals Count
     public function getProposalsCountAttribute()

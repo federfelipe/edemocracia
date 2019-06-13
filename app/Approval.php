@@ -17,10 +17,10 @@ class Approval extends Eloquent
     protected $fillable = ['user_id', 'proposal_id'];
     protected $table = 'approvals';
 
-//    public function owner()
-//    {
-//        return $this->belongsTo(Proposal::class, 'proposal_id');
-//    }
+    //    public function owner()
+    //    {
+    //        return $this->belongsTo(Proposal::class, 'proposal_id');
+    //    }
 
     /**
      * Get the proposal.

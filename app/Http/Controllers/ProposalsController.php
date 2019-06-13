@@ -101,8 +101,8 @@ class ProposalsController extends Controller
     public function index()
     {
         // $proposals = Proposal::paginate(config('global.pagination'));
-//         $proposals = $this->proposalsRepository->all()->paginate(config('global.pagination'));
-//         return view('proposals.index')->with(compact('proposals'));
+        //         $proposals = $this->proposalsRepository->all()->paginate(config('global.pagination'));
+        //         return view('proposals.index')->with(compact('proposals'));
 
         $q = Input::get('q');
         $s = Input::get('search');

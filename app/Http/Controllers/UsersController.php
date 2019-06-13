@@ -22,7 +22,7 @@ class UsersController extends Controller
         $this->proposalsRepository = $proposals;
     }*/
 
-    /**
+    /*
      * Display a list of all user's proposals.
      *
      * @param Request $request
@@ -37,7 +37,7 @@ class UsersController extends Controller
         ]);
     }*/
 
-    /**
+    /*
      * Display a list of all of the admin user's proposal responses.
      *
      * @param Request $request

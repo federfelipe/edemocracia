@@ -9,25 +9,25 @@ use Faker\Factory;
 class ProposalsTest extends TestCase
 {
     /**
-   * A basic functional test example.
-   *
-   * @return void
-   */
-  public function testRandomProposal()
-  {
-      //Use Eloquent
+     * A basic functional test example.
+     *
+     * @return void
+     */
+    public function testRandomProposal()
+    {
+        //Use Eloquent
         $proposal = Proposal::all()->random();
-      $this->seeInDatabase('proposals', ['name' => $proposal->name]);
+        $this->seeInDatabase('proposals', ['name' => $proposal->name]);
 
         //Not use Eloquent
         $proposal = factory(App\Proposal::class)->create();
 
-      $this->visit('/proposals/'.$proposal->id);
-//         ->seeInDatabase('proposals', ['name' => $proposal->name]);
+        $this->visit('/proposals/'.$proposal->id);
+        //         ->seeInDatabase('proposals', ['name' => $proposal->name]);
 
         //Not with Paginator
         //->see($proposal->name);
-  }
+    }
 
     public function testPageProposal()
     {

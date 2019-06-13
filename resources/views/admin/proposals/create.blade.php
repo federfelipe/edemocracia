@@ -17,7 +17,7 @@
                 {{ Form::open(array('route' => 'admin.proposal.store', 'class' => 'form')) }}
 
                 <div class="form-group coluna_02">
-                    {{ Form::label('Nome da Proposta') }}
+                    {{ Form::label('Nome da Propostas') }}
                     {{ Form::text('name', null,
                         array('required',
                               'class'=>'campo',

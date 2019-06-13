@@ -2,7 +2,6 @@
 
 use App\State;
 
-
 class UserFunctionalTest extends TestCase
 {
     public function testLinksMenuBar()
@@ -263,7 +262,6 @@ class UserFunctionalTest extends TestCase
             ->seePageIs('/admin/users?q=servidores');
     }
 
-
     public function testAdminEditing()
     {
         $faker = Faker\Factory::create();
@@ -315,5 +313,4 @@ class UserFunctionalTest extends TestCase
             ->type($faker->cpf, 'cpf')
             ->press('Incluir Novo Usuário');
     }
-
 }
